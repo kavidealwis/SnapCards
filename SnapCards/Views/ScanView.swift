@@ -14,7 +14,7 @@ struct ScanView: View {
 
     // MARK: - Environment
 
-    /// NEW CONCEPT (not in labs): the modelContext is SwiftData's "scratch pad".
+    
     /// `modelContext.insert(card)` adds a card, and SwiftData saves it for us.
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss       // closes this sheet
@@ -42,7 +42,7 @@ struct ScanView: View {
 
                 // Section 1: where the text comes from
                 Section {
-                    // NEW CONCEPT (not in labs): PhotosPicker shows the photo library.
+                    // PhotosPicker shows the photo library.
                     // The chosen photo is written into `pickerItem`.
                     PhotosPicker(selection: $pickerItem, matching: .images) {
                         Label("Choose Photo", systemImage: "photo.on.rectangle")
@@ -140,7 +140,7 @@ struct ScanView: View {
         isWorking = true
         errorMessage = nil
 
-        // NEW CONCEPT (not in labs): `Task { }` starts work that can `await` (pause)
+        // `Task { }` starts work that can `await` (pause)
         // without freezing the screen. `defer` runs when the block ends, however it ends.
         Task {
             defer { isWorking = false }

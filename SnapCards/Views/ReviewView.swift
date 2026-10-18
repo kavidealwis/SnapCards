@@ -77,7 +77,7 @@ struct ReviewView: View {
                 .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
                 .opacity(flipped ? 1 : 0)
         }
-        // NEW CONCEPT (not in labs): rotation3DEffect spins the view around the
+        // rotation3DEffect spins the view around the
         // vertical (y) axis, like turning over a real card.
         .rotation3DEffect(.degrees(flipped ? 180 : 0), axis: (x: 0, y: 1, z: 0))
         // Faint green (right) or red (left) tint while dragging.
@@ -94,7 +94,7 @@ struct ReviewView: View {
                 flipped.toggle()
             }
         }
-        // NEW CONCEPT (not in labs): DragGesture reports how far the finger has moved.
+        // DragGesture reports how far the finger has moved.
         .gesture(
             DragGesture()
                 .onChanged { value in

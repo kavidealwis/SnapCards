@@ -12,7 +12,6 @@ import SwiftData
 // MARK: - Flashcard model
 
 /// A flashcard saved on the device.
-/// NEW CONCEPT (not in labs): `@Model` is a SwiftData macro. It turns this class into
 /// something SwiftData can save to the phone's storage, so cards survive closing the app.
 /// SwiftData needs a `class` (not a `struct`) so it can track changes to each card.
 @Model

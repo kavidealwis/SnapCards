@@ -13,7 +13,7 @@ struct ContentView: View {
 
     // MARK: - Data
 
-    /// NEW CONCEPT (not in labs): `@Query` asks SwiftData for every saved Flashcard
+    /// `@Query` asks SwiftData for every saved Flashcard
     /// and keeps this array up to date automatically when cards are added or changed.
     @Query private var cards: [Flashcard]
 
